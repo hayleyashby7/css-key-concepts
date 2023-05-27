@@ -29,9 +29,15 @@ body {
 	color: var(--black);
 }
 
+.text-overlay {
+	background: rgba(255, 255, 255, 0.5);
+	padding: 1em;
+	width: 100%;
+	font-size: xx-large;
+}
+
 /* Header */
 header {
-	color: var(--white);
 	text-align: center;
 	font-size: 5vw;
 	order: 1;
@@ -131,24 +137,17 @@ header a {
 .welcome h3 {
 	order: 2;
 	position: absolute;
-	top: 20%;
+	bottom: 5em;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: rgba(255, 255, 255, 0.5);
-	padding: 1em;
-	width: 100%;
-	font-size: xx-large;
 }
 
 .welcome address {
 	order: 3;
 	position: absolute;
-	top: 70%;
+	bottom: 1em;
 	left: 50%;
-	width: 100%;
 	transform: translate(-50%, -50%);
-	background: rgba(255, 255, 255, 0.5);
-	padding: 1em;
 	font-size: large;
 }
 
