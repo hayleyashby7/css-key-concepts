@@ -1,7 +1,7 @@
 :root {
 	--blue: #98c6eb;
 	--white: #f2f4fa;
-	--black: #1d2734;
+	--black: #333333;
 	--accent: #f2bb05;
 }
 
@@ -11,6 +11,20 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
+}
+
+/* Header */
+header {
+	background-color: var(--blue);
+	color: var(--white);
+	padding: 1em;
+	text-align: center;
+	font-size: 5vw;
+}
+
+header a {
+	color: var(--black);
+	text-decoration: none;
 }
 
 /* Nav Bar */
@@ -45,7 +59,7 @@ body {
 .nav-bar .search {
 	float: right;
 	margin: 0;
-	padding: 0em 	1em;
+	padding: 0em 1em;
 }
 
 .search label {
