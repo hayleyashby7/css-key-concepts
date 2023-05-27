@@ -32,6 +32,9 @@ header a {
 .nav-bar {
 	overflow: hidden;
 	background-color: var(--blue);
+	position: sticky;
+	top: 0;
+	position: -webkit-sticky;
 }
 
 .nav-bar ul {
