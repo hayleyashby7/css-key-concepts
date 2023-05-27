@@ -3,10 +3,11 @@
 	--white: #f2f4fa;
 	--black: #333333;
 	--accent: #f2bb05;
+	--important: #a60808;
 }
 
 body {
-	background-color: var(--white);
+	background-color: var(--blue);
 	color: var(--black);
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
@@ -81,6 +82,27 @@ header a {
 .search button:hover {
 	background-color: var(--accent);
 	color: var(--black);
+}
+
+/* Patient Info */
+.patient-info {
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: var(--white);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	margin: 1em;
+	padding: 1em;
+}
+
+.patient-info h3 {
+	text-align: center;
+	color: var(--black);
+	background-color: var(--accent);
+}
+
+.patient-info p > strong {
+	color: var(--important);
 }
 
 /* Welcome */
