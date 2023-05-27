@@ -1,0 +1,38 @@
+:root {
+	--blue: #98c6eb;
+	--white: #f2f4fa;
+	--black: #1d2734;
+	--accent: #80ab82;
+}
+
+body {
+	background-color: var(--white);
+	color: var(--black);
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: var(--blue);
+}
+
+nav li {
+	float: left;
+}
+
+nav li a {
+	display: block;
+	padding: 1em;
+	text-align: center;
+	color: var(--black);
+	text-decoration: none;
+}
+
+nav li a:hover {
+	background-color: var(--accent);
+}
