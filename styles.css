@@ -15,11 +15,15 @@ body {
 
 /* Header */
 header {
-	background-color: var(--blue);
 	color: var(--white);
 	padding: 1em;
 	text-align: center;
 	font-size: 5vw;
+	background-image: url('/surgery.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
 }
 
 header a {
@@ -32,9 +36,6 @@ header a {
 .nav-bar {
 	overflow: hidden;
 	background-color: var(--blue);
-	position: sticky;
-	top: 0;
-	position: -webkit-sticky;
 }
 
 .nav-bar ul {
@@ -80,4 +81,42 @@ header a {
 .search button:hover {
 	background-color: var(--accent);
 	color: var(--black);
+}
+
+/* Welcome */
+.welcome {
+	position: relative;
+	max-width: 100%;
+	margin: 0 auto;
+	display: flex;
+	text-align: center;
+}
+
+.welcome img {
+	width: 100%;
+	order: 1;
+}
+
+.welcome h3 {
+	order: 2;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(255, 255, 255, 0.5);
+	padding: 1em;
+	width: 100%;
+	font-size: xx-large;
+}
+
+.welcome address {
+	order: 3;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	background: rgba(255, 255, 255, 0.5);
+	padding: 1em;
+	font-size: large;
 }
