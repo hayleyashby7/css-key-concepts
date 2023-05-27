@@ -12,6 +12,8 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
+	display: flex;
+	flex-flow: column nowrap;
 }
 
 /* Header */
@@ -20,11 +22,7 @@ header {
 	padding: 1em;
 	text-align: center;
 	font-size: 5vw;
-	background-image: url('/surgery.png');
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
+	order: 2;
 }
 
 header a {
@@ -37,6 +35,9 @@ header a {
 .nav-bar {
 	overflow: hidden;
 	background-color: var(--blue);
+	position: sticky;
+	top: 0;
+	z-index: 1;
 }
 
 .nav-bar ul {
@@ -105,6 +106,12 @@ header a {
 	color: var(--important);
 }
 
+.patient-info h2 {
+	text-align: center;
+	color: var(--black);
+	background-color: var(--blue);
+}
+
 /* Welcome */
 .welcome {
 	position: relative;
@@ -112,6 +119,7 @@ header a {
 	margin: 0 auto;
 	display: flex;
 	text-align: center;
+	order: 1;
 }
 
 .welcome img {
@@ -141,4 +149,18 @@ header a {
 	background: rgba(255, 255, 255, 0.5);
 	padding: 1em;
 	font-size: large;
+}
+
+/* Covid Info */
+.covid {
+	order: 3;
+}
+
+.my-doc {
+	order: 4;
+}
+
+/* Feedback */
+.feedback {
+	order: 5;
 }
