@@ -166,15 +166,21 @@ header a {
 	order: 5;
 }
 
-.feedback fieldset {
-	display: flex;
-	flex-flow: column wrap;
+fieldset label {
+	display: block;
 }
 
-.feedback label {
-	display: block;
+form div {
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 1em auto;
 }
 
 #message {
 	height: 10em;
+}
+
+fieldset .button {
+	margin: 1em auto;
+	width: 100%;
 }
