@@ -16,6 +16,19 @@ body {
 	flex-flow: column nowrap;
 }
 
+.button {
+	padding: 0.25em;
+	border: 1px solid var(--black);
+	background-color: var(--white);
+	color: var(--black);
+	border-radius: 5px;
+}
+
+.button:hover {
+	background-color: var(--accent);
+	color: var(--black);
+}
+
 /* Header */
 header {
 	color: var(--white);
@@ -69,19 +82,6 @@ header a {
 
 .search label {
 	display: block;
-}
-
-.search button {
-	padding: 0.25em;
-	border: 1px solid var(--black);
-	background-color: var(--white);
-	color: var(--black);
-	border-radius: 5px;
-}
-
-.search button:hover {
-	background-color: var(--accent);
-	color: var(--black);
 }
 
 /* Patient Info */
@@ -161,7 +161,20 @@ header a {
 	order: 4;
 }
 
-/* Feedback */
+/* Feedback Form */
 .feedback {
 	order: 5;
+}
+
+.feedback fieldset {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.feedback label {
+	display: block;
+}
+
+#message {
+	height: 10em;
 }
