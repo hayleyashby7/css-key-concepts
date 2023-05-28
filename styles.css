@@ -172,10 +172,6 @@ header a {
 	order: 5;
 }
 
-fieldset label {
-	display: block;
-}
-
 form div {
 	display: flex;
 	flex-flow: column nowrap;
@@ -184,6 +180,7 @@ form div {
 
 #message {
 	height: 10em;
+	resize: none;
 }
 
 fieldset .button {
